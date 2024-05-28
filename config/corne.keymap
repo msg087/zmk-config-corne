@@ -19,8 +19,6 @@
         controlLayer {
             bindings = <&to 3>;
             key-positions = <37 40>;
-            timeout-ms = <60000>;
-            layers = <0>;
         };
     };
 
