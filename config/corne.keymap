@@ -18,12 +18,9 @@
 
         controlLayer {
             bindings = <&sl 3>;
-            key-positions = <37 2>;
-        };
-
-        controlLayer2 {
-            bindings = <&sl 3>;
             key-positions = <37 40>;
+            timeout-ms = <60000>;
+            layers = <3>;
         };
     };
 
@@ -53,10 +50,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6     &kp N7    &kp N8    &kp N9     &kp N0  &kp DELETE
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans     &trans    &trans    &trans     &trans  &rgb_ug RGB_TOG
-                                        &kp LGUI      &trans        &kp RET         &kp SPACE  &trans    &kp RALT
+&kp LA(TAB)  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6     &kp N7    &kp N8    &kp N9     &kp N0  &kp DELETE
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT  &trans  &kp ESC
+&kp LSHFT    &trans        &trans        &trans        &trans        &trans          &trans     &trans    &trans    &trans     &trans  &rgb_ug RGB_TOG
+                                         &kp LGUI      &trans        &kp RET         &kp SPACE  &trans    &kp RALT
             >;
         };
 
@@ -77,10 +74,10 @@
 
         controls {
             bindings = <
-&rgb_ug RGB_BRI  &rgb_ug RGB_COLOR_HSB(233,100,50)  &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans  &kp C_VOLUME_UP
-&rgb_ug RGB_BRD  &rgb_ug RGB_COLOR_HSB(164,97,51)   &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN
-&rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,94,39)     &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans  &kt K_MUTE
-                                                            &trans  &mo 0   &trans    &kp SPACE  &trans  &trans
+&rgb_ug RGB_BRI  &rgb_ug RGB_COLOR_HSB(233,100,50)  &rgb_ug RGB_COLOR_HSB(0,98,51)    &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans  &kp C_VOLUME_UP
+&rgb_ug RGB_BRD  &rgb_ug RGB_COLOR_HSB(164,97,51)   &rgb_ug RGB_COLOR_HSB(58,93,50)   &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN
+&rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,94,39)     &rgb_ug RGB_COLOR_HSB(116,90,48)  &trans  &trans  &trans    &trans     &trans  &trans  &trans  &trans  &kt K_MUTE
+                                                                                      &trans  &mo 0   &trans    &kp SPACE  &trans  &trans
             >;
         };
     };
