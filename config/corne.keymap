@@ -20,7 +20,7 @@
             bindings = <&sl 3>;
             key-positions = <37 40>;
             timeout-ms = <60000>;
-            layers = <3>;
+            layers = <0>;
         };
     };
 
