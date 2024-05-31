@@ -28,16 +28,19 @@
             layers = <1 0 2>;
         };
 
-        multiply_on_num {
-            bindings = <&kp ASTERISK>;
-            key-positions = <10 41>;
-            layers = <4>;
+        print_screen {
+            bindings = <&print_screen>;
+            key-positions = <36 13>;
+            layers = <0>;
         };
+    };
 
-        divide_num_pad {
-            bindings = <&kp SLASH>;
-            key-positions = <41 11>;
-            layers = <4>;
+    macros {
+        print_screen: print_screen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(S))>;
+            label = "PRINT_SCREEN";
         };
     };
 
@@ -55,18 +58,18 @@
 
         lower_layer {
             bindings = <
-&mt TILDE GRAVE  &kp N1         &kp N2         &kp N3        &kp N4        &kp N5          &kp N6    &kp N7         &kp N8       &kp N9     &kp N0           &kp DELETE
-&bt BT_CLR       &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp COLON        &kp ESC
-&kp LSHFT        &bt BT_DISC 0  &bt BT_DISC 1  &to 4         &to 4         &out OUT_TOG    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &rgb_ug RGB_TOG  &kp LGUI
-                                               &trans        &to 0         &kp SPACE       &trans    &trans         &kp RALT
+&kp GRAVE   &kp N1         &kp N2         &kp N3        &kp N4        &kp N5          &kp N6    &kp N7         &kp N8       &kp N9     &kp N0           &kp DELETE
+&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp SQT          &kp ESC
+&kp LSHFT   &bt BT_DISC 0  &bt BT_DISC 1  &to 4         &to 4         &out OUT_TOG    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &rgb_ug RGB_TOG  &kp LGUI
+                                          &trans        &to 0         &kp RET         &trans    &trans         &kp RALT
             >;
         };
 
         raise_layer {
             bindings = <
-&kp TILDE  &kp EXCL       &kp AT            &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR   &kp BSPC
-&kp CAPS   &kp LESS_THAN  &kp GREATER_THAN  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp GRAVE  &kp BACKSLASH
-&kp LSHFT  &trans         &trans            &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE   &kp RIGHT_SHIFT
+&kp TILDE  &kp EXCL       &kp AT            &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR          &kp RPAR           &kp BSPC
+&kp CAPS   &kp LESS_THAN  &kp GREATER_THAN  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp PIPE         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp BACKSLASH
+&kp LSHFT  &trans         &trans            &trans    &trans    &trans       &kp UNDER  &kp PLUS   &none            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_SHIFT
                                             &kp LGUI  &trans    &kp ENTER    &kp SPACE  &trans     &kp RALT
             >;
         };
@@ -82,10 +85,10 @@
 
         num_pad {
             bindings = <
-&none  &kp F1  &kp F2  &kp F3   &kp F4  &kp F5     &kp N7  &kp N8   &kp N9           &kp MINUS  &kp LPAR      &kp RPAR
-&none  &none   &none   &none    &none   &none      &kp N4  &kp N5   &kp N6           &kp PLUS   &kp LBKT      &kp RBKT
-&none  &none   &none   &kp F10  &none   &kp F12    &kp N1  &kp N2   &kp N3           &kp RET    &kp LS(LBRC)  &kp LS(RIGHT_BRACE)
-                       &none    &to 0   &none      &kp N0  &kp DOT  &kp RIGHT_SHIFT
+&kp ESC  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5     &kp N7  &kp N8   &kp N9           &kp MINUS        &kp DEL               &kp BACKSPACE
+&none    &kp F6  &kp F7  &kp F8  &kp F9   &kp F10    &kp N4  &kp N5   &kp N6           &kp PLUS         &kp FSLH              &kp ENTER
+&none    &none   &none   &none   &kp F11  &kp F12    &kp N1  &kp N2   &kp N3           &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS  &kp RPAR
+                         &none   &to 0    &none      &kp N0  &kp DOT  &kp RIGHT_SHIFT
             >;
         };
     };
