@@ -28,26 +28,35 @@
         };
 
         print_screen {
-            bindings = <&print_screen>;
+            bindings = <&kp LS(LG(S))>;
             key-positions = <36 14>;
+            layers = <0>;
         };
- 
+
         escapeOnDefault {
             bindings = <&kp ESC>;
             key-positions = <39 23>;
             layers = <0>;
         };
+
+        resr {
+            bindings = <&print_seq>;
+            key-positions = <36 15>;
+        };
     };
 
     macros {
-        print_screen: print_screen {
+        print_seq: print_seq_node {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kb LEFT_ALT>
-                , <&macro_tap S>
-                , &macro_release <&kp LEFT_ALT>
-                ;
-            label = "PRINT_SCREEN";
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT &kp S>,
+                <&macro_release>,
+                <&kp LEFT_ALT>,
+                <&macro_press>;
+
+            label = "NEW_MACRO";
         };
     };
 
