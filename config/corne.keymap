@@ -31,7 +31,7 @@
             bindings = <&print_screen>;
             key-positions = <36 14>;
         };
-
+ 
         escapeOnDefault {
             bindings = <&kp ESC>;
             key-positions = <39 23>;
@@ -43,7 +43,10 @@
         print_screen: print_screen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LS(S))>;
+            bindings = <&macro_press &kb LEFT_ALT>
+                , <&macro_tap S>
+                , &macro_release <&kp LEFT_ALT>
+                ;
             label = "PRINT_SCREEN";
         };
     };
