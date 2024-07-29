@@ -74,10 +74,10 @@
 
         lower_layer {
             bindings = <
-&kp GRAVE   &kp N1         &kp N2         &kp N3         &kp N4        &kp N5          &kp N6    &kp N7         &kp N8       &kp N9     &kp N0           &kp DELETE
-&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp SQT          &kp ESC
-&kp LSHFT   &bt BT_DISC 0  &bt BT_DISC 1  &kp LS(LG(S))  &to 4         &out OUT_TOG    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &rgb_ug RGB_TOG  &kp LGUI
-                                          &trans         &to 0         &kp RET         &trans    &trans         &kp RALT
+&kp GRAVE   &kp N1         &mt F2 NUMBER_2  &kp N3         &kp N4        &mt F5 N5       &kp N6    &kp N7         &mt F8 N8    &kp N9     &kp N0           &kp DELETE
+&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp SQT          &kp ESC
+&kp LSHFT   &bt BT_DISC 0  &bt BT_DISC 1    &kp LS(LG(S))  &to 4         &out OUT_TOG    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &rgb_ug RGB_TOG  &kp LGUI
+                                            &trans         &to 0         &kp RET         &trans    &trans         &kp RALT
             >;
         };
 
