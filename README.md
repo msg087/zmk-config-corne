@@ -13,7 +13,8 @@ Here you can see the visual changes to the configuration:
 > The file for the workflows is in [workflows](./.github/workflows/keymap-drawer.yaml) in case you want to modify it.
 
 ## keymap corne
-[![keymap-drawer-demo-corne](keymap-drawer/corne.svg)]
+![Keymap Drawer Corne](keymap-drawer/corne.svg)
+
 
 
 
