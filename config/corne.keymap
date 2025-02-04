@@ -63,6 +63,11 @@
             bindings = <&print_seq>;
             key-positions = <36 15>;
         };
+
+        to_mouse {
+            bindings = <&to 5>;
+            key-positions = <13 14>;
+        };
     };
 
     macros {
@@ -138,9 +143,9 @@
         mouse {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &mkp MB1
 &trans  &trans  &trans  &trans  &trans  &trans    &trans          &msc SCRL_DOWN  &msc SCRL_UP  &mkp MB1         &trans  &trans
-                        &trans  &to 0   &trans    &trans          &trans          &trans
+                        &trans  &to 0   &trans    &mkp MB1        &to 0           &trans
             >;
         };
     };
