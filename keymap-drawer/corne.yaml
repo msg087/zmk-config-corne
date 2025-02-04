@@ -1,0 +1,275 @@
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layers:
+  default:
+  - ↹
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - $$mdi:backspace-outline$$
+  - {t: Esc, h: LEFT SHIFT}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: LEFT ALT}
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, h: ''''}
+  - ⏎
+  - LEFT CONTROL
+  - {t: Z, h: LEFT GUI}
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RSHIFT
+  - {t: Esc, h: LEFT ALT}
+  - lower
+  - ⏎
+  - ␣
+  - raise
+  - $$mdi:apple-keyboard-option$$
+  lower:
+  - '`'
+  - '1'
+  - {t: '2', h: F2}
+  - '3'
+  - '4'
+  - {t: '5', h: F5}
+  - '6'
+  - '7'
+  - {t: '8', h: F8}
+  - '9'
+  - '0'
+  - DELETE
+  - BT CLR ALL
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - Out BLE
+  - ←
+  - ↓
+  - ↑
+  - →
+  - ''''
+  - Esc
+  - $$mdi:apple-keyboard-shift$$
+  - {t: BT DISC, h: '0'}
+  - {t: BT DISC, h: '1'}
+  - Sft+Gui+S
+  - {t: num_pad, h: toggle}
+  - Out USB
+  - Home
+  - PAGE DOWN
+  - PAGE UP
+  - End
+  - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
+  - $$mdi:apple-keyboard-command$$
+  - {t: ▽, type: trans}
+  - {t: default, h: toggle, type: held}
+  - ⏎
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-option$$
+  raise:
+  - '~'
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - AMPS
+  - KP MULTIPLY
+  - (
+  - )
+  - $$mdi:backspace-outline$$
+  - Caps Lock
+  - <
+  - '>'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '-'
+  - '='
+  - '|'
+  - '{'
+  - '}'
+  - \
+  - $$mdi:apple-keyboard-shift$$
+  - Alt+1
+  - Alt+2
+  - Alt+3
+  - Alt+4
+  - Alt+5
+  - _
+  - +
+  - ''
+  - '['
+  - ']'
+  - RIGHT SHIFT
+  - $$mdi:apple-keyboard-command$$
+  - {t: ▽, type: trans}
+  - ENTER
+  - ␣
+  - {type: held}
+  - $$mdi:apple-keyboard-option$$
+  controls:
+  - {t: '$$mdi:led-outline$$', s: '$$tabler:brightness-down$$', type: sym_by_sym}
+  - RGB COLOR HSB(233,100,50)
+  - RGB COLOR HSB(0,98,51)
+  - Out BLE
+  - BT 1
+  - BT 2
+  - EP ON
+  - Reset
+  - {t: mouse, h: toggle}
+  - ''
+  - ''
+  - VOLUME UP
+  - {t: '$$mdi:led-on$$', s: '$$tabler:brightness-up$$', type: sym_by_sym}
+  - RGB COLOR HSB(164,97,51)
+  - RGB COLOR HSB(58,93,50)
+  - Out USB
+  - {t: BT DISC, h: '0'}
+  - {t: BT DISC, h: '1'}
+  - EP OFF
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - ''
+  - ''
+  - VOLUME DOWN
+  - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
+  - RGB COLOR HSB(0,94,39)
+  - RGB COLOR HSB(116,90,48)
+  - ''
+  - ''
+  - BT CLR
+  - '&soft_off'
+  - ''
+  - ''
+  - ''
+  - ''
+  - MUTE
+  - ''
+  - {t: default, h: toggle}
+  - ''
+  - ␣
+  - ''
+  - ''
+  num_pad:
+  - Esc
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - '7'
+  - '8'
+  - '9'
+  - +
+  - '-'
+  - BACKSPACE
+  - ''
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - '4'
+  - '5'
+  - '6'
+  - KP MULTIPLY
+  - /
+  - ENTER
+  - ''
+  - ''
+  - ''
+  - ''
+  - F11
+  - F12
+  - '1'
+  - '2'
+  - '3'
+  - {t: ENTER, h: Esc}
+  - (
+  - )
+  - ''
+  - {t: default, h: toggle}
+  - ''
+  - '0'
+  - .
+  - {t: default, h: toggle}
+  mouse:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&mkp MB1'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: default, h: toggle}
+  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - {t: default, h: toggle}
+  - {t: ▽, type: trans}
+combos:
+- p: [37, 40]
+  k: {t: controls, h: toggle}
+- p: [36, 2]
+  k: {t: num_pad, h: toggle}
+- p: [36, 14]
+  k: Sft+Gui+S
+  l: [default]
+- p: [39, 23]
+  k: Esc
+  l: [default]
+- p: [36, 15]
+  k: '&print_seq'
+- p: [13, 14]
+  k: {t: mouse, h: toggle}
