@@ -209,9 +209,9 @@ layers:
   - {t: ENTER, h: Esc}
   - (
   - )
-  - ''
+  - '&esc_to_layer0'
   - {t: default, h: toggle}
-  - ''
+  - '&esc_to_layer0'
   - '0'
   - .
   - {t: default, h: toggle}
