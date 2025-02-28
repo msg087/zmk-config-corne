@@ -16,13 +16,13 @@ layers:
   - {t: Esc, h: LEFT SHIFT}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: LEFT ALT}
-  - D
+  - {t: LEFT SHIFT, h: D}
   - F
   - G
   - H
-  - J
-  - K
-  - L
+  - {t: RSHIFT, h: J}
+  - {t: '$$mdi:apple-keyboard-option$$', h: K}
+  - {t: '$$mdi:apple-keyboard-control$$', h: L}
   - {t: ;, h: ''''}
   - ⏎
   - LEFT CONTROL
