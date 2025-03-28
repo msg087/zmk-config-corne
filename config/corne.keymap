@@ -66,11 +66,6 @@
             bindings = <&to 5>;
             key-positions = <13 14>;
         };
-
-        to_lower {
-            bindings = <&to 1>;
-            key-positions = <18 19 20 21>;
-        };
     };
 
     macros {
