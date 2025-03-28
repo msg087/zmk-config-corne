@@ -273,5 +273,3 @@ combos:
   k: '&print_seq'
 - p: [13, 14]
   k: {t: mouse, h: toggle}
-- p: [18, 19, 20, 21]
-  k: {t: lower, h: toggle}
