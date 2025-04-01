@@ -22,12 +22,12 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <195>;
             quick-tap-ms = <75>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <225>;
         };
     };
 
@@ -80,13 +80,6 @@
                 <&macro_press>;
 
             label = "NEW_MACRO";
-        };
-
-        test: test {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
-            label = "TEST";
         };
 
         esc_to_layer0: esc_to_layer0 {
