@@ -38,7 +38,7 @@ layers:
   - /
   - RSHIFT
   - {t: Esc, h: LEFT ALT}
-  - lower
+  - {t: lower, h: lower}
   - ⏎
   - ␣
   - raise
