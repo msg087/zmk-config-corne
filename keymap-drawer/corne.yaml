@@ -140,7 +140,7 @@ layers:
   - Reset
   - {t: mouse, h: toggle}
   - ''
-  - ''
+  - BRIGHTNESS INC
   - VOLUME UP
   - {t: '$$mdi:led-on$$', s: '$$tabler:brightness-up$$', type: sym_by_sym}
   - RGB COLOR HSB(164,97,51)
@@ -152,7 +152,7 @@ layers:
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
   - ''
-  - ''
+  - BRIGHTNESS DEC
   - VOLUME DOWN
   - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
   - RGB COLOR HSB(0,94,39)
