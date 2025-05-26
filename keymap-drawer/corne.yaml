@@ -13,16 +13,16 @@ layers:
   - O
   - P
   - $$mdi:backspace-outline$$
-  - {t: Esc, h: LEFT SHIFT}
-  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: S, h: LEFT ALT}
+  - {t: LEFT SHIFT, h: Esc}
+  - {t: '$$mdi:apple-keyboard-control$$', h: A}
+  - {t: LEFT ALT, h: S}
   - {t: LEFT SHIFT, h: D}
-  - F
-  - G
-  - H
-  - {t: RSHIFT, h: J}
-  - {t: '$$mdi:apple-keyboard-option$$', h: K}
-  - {t: '$$mdi:apple-keyboard-control$$', h: L}
+  - F LEFT ALT
+  - {t: '$$mdi:apple-keyboard-command$$', h: G}
+  - {t: '$$mdi:apple-keyboard-command$$', h: H}
+  - {t: '$$mdi:apple-keyboard-option$$', h: J}
+  - {t: RSHIFT, h: K}
+  - {t: '$$mdi:apple-keyboard-option$$', h: L}
   - {t: ;, h: ''''}
   - ⏎
   - LEFT CONTROL
