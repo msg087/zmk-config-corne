@@ -17,7 +17,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-control$$', h: A}
   - {t: LEFT ALT, h: S}
   - {t: LEFT SHIFT, h: D}
-  - F LEFT ALT
+  - {t: LEFT ALT, h: F}
   - {t: '$$mdi:apple-keyboard-command$$', h: G}
   - {t: '$$mdi:apple-keyboard-command$$', h: H}
   - {t: '$$mdi:apple-keyboard-option$$', h: J}
